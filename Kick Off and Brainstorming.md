@@ -38,7 +38,7 @@ Brandon George :
       - Easy to use, simple UI
       - Block / accept senders with one click.
 
-Erick Rivera :
+### Erick Rivera :
 
     Favorite apps and their features: 
     
@@ -55,17 +55,17 @@ Erick Rivera :
       - Allows users to see any upcoming plans traveled in an organized tab.
       - Plenty of trip guides available for the user to see when planning a vacation.
 
-Elvis:
+### Elvis:
 
-- [Hey](https://www.hey.com)
+1. [Hey](https://www.hey.com)
   - blocks trackers and tells you who’s spying on you.
   - simple UI, and easy to use, but totally different to what you may be used to.
   - you can send huge files without needing eny third-party tools.
  
-- [Tweetdeck (X Pro)](https://tweetdeck.twitter.com/)
+ 2. [Tweetdeck (X Pro)](https://tweetdeck.twitter.com/)
   - Superior Twitter/X experience for desktop users.
   - Allows panels to be rearranged, allowing users to focus on what matters.
 
-- [Obsidian](https://obsidian.md/)
+3. [Obsidian](https://obsidian.md/)
   - Allows you to create connections between your notes, linking anything and everything — ideas, people, places, books, and beyond.
   - Has an myriad of plugins that literally allow you do anything you may want to do.
