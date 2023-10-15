@@ -21,3 +21,21 @@ Tomas:
   Being able to upload different forms of media(such as reels, videos, pics, etc.),
   Can go on other apps while watching/listening to Youtube
 
+
+Brandon George : 
+  Favorite apps and their features :
+    1. Pinterest
+      - incredible search and suggestion algorithms for visual based objects. 
+      - easy organization for visual items.
+      - very visual and clean concidering the sum of photos on the site.
+
+    2. Spotify 
+      - Incredible seach and suggestion algorithms for audio.
+      - Quality options and easy of access of the audio.
+      - Selections of types of data, music, podcasts and now auiobooks.
+
+    3. Spark (email)
+      - Great sorting AI algo
+      - Easy to use, simple UI
+      - Block / accept senders with one click.
+
