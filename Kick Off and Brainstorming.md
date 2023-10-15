@@ -38,3 +38,18 @@ Brandon George :
       - Easy to use, simple UI
       - Block / accept senders with one click.
 
+Erick Rivera :
+  Favorite apps and their features :
+
+  1. Flighty
+      - Easy upload of flights from calendar straight into the app.
+      - Great MapKit integration showing planes nearby and the path of your flight.
+      - Great notification system letting you know when the plane takes off, touches down, baggage carousel number, delays, and gates asap.
+    2. Apollo 
+      - Great API usage of Reddit showing you the same feed as you would through reddits app.
+      - Great layout and an improvement over the orgignal app.
+      - Better video player and image loading then the original app.
+    3. Culture Trip
+      - Beautiful and simple layout on the app.
+      - Allows users to see any upcoming plans traveled in an organized tab.
+      - Plenty of trip guides available for the user to see when planning a vacation.
