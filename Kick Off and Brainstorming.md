@@ -7,7 +7,7 @@ You'll return to this document during the next capstone session!
 Each team member should add 3 to 5 mutually exclusive apps (two team members can't list the same app).
 
 
-Tomas:
+### Tomas:
 
 -Twitter/X:
   Being able to "quote" a tweet,
@@ -22,7 +22,8 @@ Tomas:
   Can go on other apps while watching/listening to Youtube
 
 
-Brandon George : 
+### Brandon George : 
+
   Favorite apps and their features :
   
     1. Pinterest
