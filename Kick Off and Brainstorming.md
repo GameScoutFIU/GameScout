@@ -39,9 +39,10 @@ Brandon George :
       - Block / accept senders with one click.
 
 Erick Rivera :
-  Favorite apps and their features :
 
-  1. Flighty
+    Favorite apps and their features: 
+    
+    1. Flighty
       - Easy upload of flights from calendar straight into the app.
       - Great MapKit integration showing planes nearby and the path of your flight.
       - Great notification system letting you know when the plane takes off, touches down, baggage carousel number, delays, and gates asap.
