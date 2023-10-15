@@ -9,15 +9,13 @@ Each team member should add 3 to 5 mutually exclusive apps (two team members can
 
 ### Tomas:
 
--Twitter/X:
+- Twitter/X:
   Being able to "quote" a tweet,
   Twitter Lists
-
--Apple Music:
+- Apple Music:
   Different ways to listen to music(such as spatial audio option),
   Playlists based off your listening history
-
--YouTube:
+- YouTube:
   Being able to upload different forms of media(such as reels, videos, pics, etc.),
   Can go on other apps while watching/listening to Youtube
 
