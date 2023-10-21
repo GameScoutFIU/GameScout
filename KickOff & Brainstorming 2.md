@@ -12,7 +12,7 @@
 
 
 
-### AI Tutor Chatbot: 
+### AI Homework Assistant: 
 
 - User Need: Uses AI API to help students who are having issues within a topic.
 - Research: Though there are many new tools for learning releasing since the publication of tools like gpt many     still do not help cover the topics specified with great depth or ease, many still do not understand how to utilize AI tools to assist with learning as well. 
