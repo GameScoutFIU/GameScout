@@ -1,4 +1,4 @@
-#App Ideas
+# App Ideas
 
 ### Simple Budget Tracker:
 
