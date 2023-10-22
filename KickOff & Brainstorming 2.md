@@ -54,6 +54,14 @@ Implement robust security measures to protect user data and privacy.
 Implement load balancing for distributing traffic across multiple servers to ensure the app can handle increased usage.
 
 
+### Trip Planner App:
+
+- User Need: Allows users to select premade travel plans with MapKit integration or make their own plan by choosing from a list of things to do.
+- Market Research: While there is a few travel apps in the market, providing users an easy and straightfoward trip planner will bring in users who find other planners to complex.
+- Feasability: This app can be accomplished given the knowledge of using databases to store userdata and create login functionality and MapKit functionality learned during the semester.
+- Time Frame: An app with all these core features can be completed within a 2-4 week time frame.
+- Technical Constraints: DB to store user plans saved and created plans by us, Login Functionality, and a clear and concise Front-End.
+- Scalability: Future app could contain thousands of trip destinations and even event bookings and travel bookings such as hotels and flights.
 
 
 
