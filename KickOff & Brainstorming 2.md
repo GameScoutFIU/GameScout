@@ -30,3 +30,32 @@
 - Time Frame: 2 weeks
 - Technical Constraints: Having a user-friendly interface for the frontend, access to the cloud for sign-in features, and backend for api-    calls
 - Scalability: The video game industry is one of the biggest, making billions a year and with new innovations and games coming out all the    time. This app capitalizes on that by showing games that have come out and can be filtered through different categories. This app can       continue to grow as long as the video game industry continues to grow which shows no signs of stopping.
+
+### AI Job App:
+
+
+- User Need: Users will get personalized job recommendations, resume optimization, application tracking, and interview preparation tips with mock up questions and answers. 
+
+- Market Research: Analyze the job search app market to identify competitors and gaps in the market. Study successful apps like LinkedIn, Indeed, and Glassdoor to understand their features and business models.
+Research AI technologies such as natural language processing (NLP) for resume analysis, recommendation algorithms, sentiment analysis, and chatbots for user interaction.
+Data Sources: Identify sources of job listings, including partnerships with companies, web scraping, and integration with job posting platforms like LinkedIn or Indeed.
+
+- Feasibility: Assess the availability of job listings and candidate data for your app. Ensure you can collect, update, and maintain this data.
+Evaluate the feasibility of implementing AI algorithms and models for tasks like matching job seekers with job listings and providing intelligent recommendations.
+Legal and Ethical Considerations: Determine compliance with data privacy regulations like GDPR, and ensure ethical use of AI in the job search process.
+
+-  Time Frame: 4 - 6 weeks to create a basic implementation of this application. 
+
+-  Technical Constraints: Decide whether your app will be web-based, mobile, or both. Consider the technology stack, frameworks, and tools for development.
+
+Implement robust security measures to protect user data and privacy.
+
+-  Scalability: Consider using cloud platforms like AWS, Azure, or Google Cloud for scalability and flexibility.
+Implement load balancing for distributing traffic across multiple servers to ensure the app can handle increased usage.
+
+
+
+
+
+
+
