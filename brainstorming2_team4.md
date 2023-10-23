@@ -66,7 +66,7 @@ Implement load balancing for distributing traffic across multiple servers to ens
 
 ## 🎉 The winners of [this poll](https://github.com/elvisblanco1993/ios-group4-project/discussions/1) are:
 
-### Gametime App:
+### App Idea 1: Gametime App
 
 - User Need: This app allows you to see all different types of gaming titles out whether it's on PC, Ps5, XBOX, Switch, etc. making it        easier for you to keep up with what's coming out or potentially find something new to play using the app.
 - Market Research: The app is for people trying to find a new game to play. Somewhat like a Flixster app, except designed for video games     with categories pertaining to that.
@@ -76,7 +76,7 @@ Implement load balancing for distributing traffic across multiple servers to ens
 - Scalability: The video game industry is one of the biggest, making billions a year and with new innovations and games coming out all the    time. This app capitalizes on that by showing games that have come out and can be filtered through different categories. This app can       continue to grow as long as the video game industry continues to grow which shows no signs of stopping.
 
 
-### Trip Planner App:
+### App Idea 2: Trip Planner App
 
 - User Need: Allows users to select premade travel plans with MapKit integration or make their own plan by choosing from a list of things to do.
 - Market Research: While there is a few travel apps in the market, providing users an easy and straightfoward trip planner will bring in users who find other planners to complex.
