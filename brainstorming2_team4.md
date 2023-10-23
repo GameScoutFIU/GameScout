@@ -64,7 +64,7 @@ Implement load balancing for distributing traffic across multiple servers to ens
 - Scalability: Future app could contain thousands of trip destinations and even event bookings and travel bookings such as hotels and flights.
 
 
-## The winners of this poll are:
+## 🎉 The winners of [this poll](https://github.com/elvisblanco1993/ios-group4-project/discussions/1) are:
 
 ### Gametime App:
 
