@@ -1,6 +1,6 @@
 #WIP...
 
-# Roam Radar
+# Game Time App
 
 ## Table of Contents
 
@@ -13,17 +13,41 @@
   
 ### Description
 
-[Description of your app]
+The "Gametime App" is a user-friendly and time-efficient solution for avid gamers seeking the latest video game releases across various platforms, including PC, PlayStation 5, Xbox, Nintendo Switch, and more. This app simplifies the process of discovering new games and staying updated on upcoming releases, catering to both beginners and experienced gamers.
+
+Comprehensive Game Library: Access an extensive catalog of video games, categorized by genre, platform, and release date.
+
+Effortless Search and Filtering: Easily find games based on your preferences using search and filter options.
+
+Upcoming Releases: Stay ahead of the gaming curve with a dedicated section highlighting upcoming game launches.
+
+User Reviews and Ratings: Make informed decisions with user-generated reviews and ratings.
+
+User-Friendly Interface: Enjoy smooth navigation with an intuitive and beginner-friendly design.
+
+Secure Cloud-Based Sign-In: Ensure user data safety with secure sign-in methods.
+
+API Integration: Connect to gaming APIs for up-to-date game information.
+
+Favorites List: Create a list of favorite games for easy tracking.
+
+Personalized Recommendations: Receive game suggestions based on your preferences.
+
+Feedback System: Share your thoughts to help us improve your gaming experience.
 
 ### App Evaluation
 
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+Category: Our app falls into the category of "Entertainment" or "Gaming" apps. It serves as a valuable tool for gamers to discover and explore new games, making it an engaging entertainment app.
+
+Mobile: The app is designed primarily for mobile platforms, such as iOS and Android. It provides a mobile-friendly experience, allowing users to access it on the go, which aligns well with the mobile app category.
+
+Story: The story behind our app involves simplifying the process of discovering and staying updated on video game releases. It caters to the needs of gamers by offering a convenient and user-friendly platform for exploring new titles.
+
+Market: The market for gaming-related apps is substantial, given the immense popularity of video games. Our app targets gamers looking for a reliable source to discover and track new releases, addressing a clear market need.
+
+Habit: The app encourages user engagement by providing features like personalized recommendations, favorites lists, and user reviews. These features promote habitual use as gamers return to the app to find and discuss new games.
+
+Scope: As an MVP, our app focuses on essential features for game discovery and basic user interaction. It has a clear scope, offering a simplified experience. The scalability potential lies in expanding the game catalog and enhancing recommendation algorithms as the app evolves.
 
 ## Product Spec
 
