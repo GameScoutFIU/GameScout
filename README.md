@@ -1,6 +1,6 @@
 #WIP...
 
-# Game Time App
+# GameScout
 
 ## Table of Contents
 
@@ -17,17 +17,23 @@ The "Gametime App" is a user-friendly and time-efficient solution for avid gamer
 
 ### App Evaluation
 
-Category: Our app falls into the category of "Entertainment" or "Gaming" apps. It serves as a valuable tool for gamers to discover and explore new games, making it an engaging entertainment app.
+Category:
+  Our app falls into the category of "Entertainment" or "Gaming" apps. It serves as a valuable tool for gamers to discover and explore new games, making it an engaging entertainment app.
 
-Mobile: The app is designed primarily for mobile platforms, such as iOS and Android. It provides a mobile-friendly experience, allowing users to access it on the go, which aligns well with the mobile app category.
+Mobile: 
+  The app is designed primarily for mobile platforms, such as iOS and Android. It provides a mobile-friendly experience, allowing users to access it on the go, which aligns well with the mobile app category.
 
-Story: The story behind our app involves simplifying the process of discovering and staying updated on video game releases. It caters to the needs of gamers by offering a convenient and user-friendly platform for exploring new titles.
+Story: 
+  The story behind our app involves simplifying the process of discovering and staying updated on video game releases. It caters to the needs of gamers by offering a convenient and user-friendly platform for exploring new titles.
 
-Market: The market for gaming-related apps is substantial, given the immense popularity of video games. Our app targets gamers looking for a reliable source to discover and track new releases, addressing a clear market need.
+Market: 
+  The market for gaming-related apps is substantial, given the immense popularity of video games. Our app targets gamers looking for a reliable source to discover and track new releases, addressing a clear market need.
 
-Habit: The app encourages user engagement by providing features like personalized recommendations, favorites lists, and user reviews. These features promote habitual use as gamers return to the app to find and discuss new games.
+Habit: 
+  The app encourages user engagement by providing features like personalized recommendations, favorites lists, and user reviews. These features promote habitual use as gamers return to the app to find and discuss new games.
 
-Scope: As an MVP, our app focuses on essential features for game discovery and basic user interaction. It has a clear scope, offering a simplified experience. The scalability potential lies in expanding the game catalog and enhancing recommendation algorithms as the app evolves.
+Scope: 
+  As an MVP, our app focuses on essential features for game discovery and basic user interaction. It has a clear scope, offering a simplified experience. The scalability potential lies in expanding the game catalog and enhancing recommendation algorithms as the app evolves.
 
 ## Product Spec
 
