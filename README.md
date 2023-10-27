@@ -94,12 +94,19 @@ User can manage their profile and settings.
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
+Login/Registration Screen
+  * => Game Catalog (after successful login/registration)
+Game Catalog Screen
+  * => Game Details (when selecting a game for more information)
+Game Details Screen
+  * => User Profile (for user interactions like adding to favorites)
+User Profile Screen
+  * No direct navigation to other screens from this screen.
+
+This navigation flow outlines how users can move between different sections of the app, 
+from browsing the game catalog to accessing game details and managing their user profile. 
+It's designed to provide an intuitive and efficient user experience.
+
 
 ## Wireframes
 
