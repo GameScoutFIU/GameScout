@@ -15,26 +15,6 @@
 
 The "Gametime App" is a user-friendly and time-efficient solution for avid gamers seeking the latest video game releases across various platforms, including PC, PlayStation 5, Xbox, Nintendo Switch, and more. This app simplifies the process of discovering new games and staying updated on upcoming releases, catering to both beginners and experienced gamers.
 
-Comprehensive Game Library: Access an extensive catalog of video games, categorized by genre, platform, and release date.
-
-Effortless Search and Filtering: Easily find games based on your preferences using search and filter options.
-
-Upcoming Releases: Stay ahead of the gaming curve with a dedicated section highlighting upcoming game launches.
-
-User Reviews and Ratings: Make informed decisions with user-generated reviews and ratings.
-
-User-Friendly Interface: Enjoy smooth navigation with an intuitive and beginner-friendly design.
-
-Secure Cloud-Based Sign-In: Ensure user data safety with secure sign-in methods.
-
-API Integration: Connect to gaming APIs for up-to-date game information.
-
-Favorites List: Create a list of favorite games for easy tracking.
-
-Personalized Recommendations: Receive game suggestions based on your preferences.
-
-Feedback System: Share your thoughts to help us improve your gaming experience.
-
 ### App Evaluation
 
 Category: Our app falls into the category of "Entertainment" or "Gaming" apps. It serves as a valuable tool for gamers to discover and explore new games, making it an engaging entertainment app.
