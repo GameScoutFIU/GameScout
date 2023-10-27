@@ -47,24 +47,27 @@ Scope:
 
 **Required Must-have Stories**
 
-User can browse a catalog of video games.
-User can search for games by platform.
-User can search for games by genre.
-User can view detailed information about a selected game.
-User can see upcoming game releases with release dates.
-User can read user-generated game reviews and ratings.
-User can add games to their favorites list.
-User can receive personalized game recommendations.
-User can provide feedback and suggestions.
-User can create an account.
-User can log in.
-User can manage their profile and settings.
+1. User can browse a catalog of video games.
+2. User can search for games by platform.
+3. User can search for games by genre.
+4. User can view detailed information about a selected game.
+5. User can see upcoming game releases with release dates.
+6. User can read user-generated game reviews and ratings.
+7. User can add games to their favorites list.
+8. User can receive personalized game recommendations.
+9. User can provide feedback and suggestions.
+10. User can create an account.
+11. User can log in.
+12. User can manage their profile and settings.
 
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+1. **User can view a more detailed game screen:** Provide users with a dedicated screen to view a selected game in more detail, including user comments and discussions.
+2. **User can see trending games**: Implement a section that displays trending or popular games based on user interactions and ratings.
+3. **User can see notifications for game interactions**: Notify users when their favorite games receive new reviews, ratings, or when users comment on them.
+4. **User can see their profile page with their favorited games**: Allow users to access a profile page displaying their favorited games and user-generated content.
+5. **User can view other users' profiles and see their favorited games**: Enable users to explore other users' profiles and see the games they have favorited.
 
 ### 2. Screen Archetypes
 
