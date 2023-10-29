@@ -113,8 +113,7 @@ It's designed to provide an intuitive and efficient user experience.
 
 ## Wireframes
 
-[Add picture of your hand sketched wireframes in this section]
-<img src="wireframes.png" width=600>
+![Wireframe](wireframes.png)
 
 ### [BONUS] Digital Wireframes & Mockups
 
