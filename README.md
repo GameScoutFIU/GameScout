@@ -117,7 +117,8 @@ It's designed to provide an intuitive and efficient user experience.
 
 ### [BONUS] Digital Wireframes & Mockups
 
-### [BONUS] Interactive Prototype
+[Click to open Figma mockups](https://www.figma.com/file/gdRQXj06kOZyOxlF9SahrL/Untitled?type=design&node-id=0%3A1&mode=design&t=eg5B5jfitnzW44TA-1)
+
 
 ## Schema 
 
