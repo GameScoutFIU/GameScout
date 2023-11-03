@@ -17,7 +17,7 @@ struct TextInputView: View {
     var body: some View {
         TextField(placeholder, text: $text)
             .padding(.leading, sfSymbol != nil ? textFieldLeading : 0)
-            .foregroundStyle(.black)
+            .foregroundStyle(.white)
             .keyboardType(keyboardType)
             .autocapitalization(.none)
             .disableAutocorrection(true)
@@ -26,13 +26,13 @@ struct TextInputView: View {
             .background(
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color("mainColor"))
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.white, lineWidth: 1)
             )
             .overlay(
                 HStack {
                     if let sfSymbol = sfSymbol {
                         Image(systemName: sfSymbol)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                             .padding(.leading, 10)
                     }
                     Spacer()

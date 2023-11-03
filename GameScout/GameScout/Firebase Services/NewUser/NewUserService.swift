@@ -13,7 +13,7 @@ import FirebaseDatabase
 enum NewUserKeys: String {
     case firstName
     case lastName
-    case newUser
+    case username
 }
 
 protocol NewUserService {
@@ -33,7 +33,7 @@ final class NewUserServiceImpl: NewUserService {
                             if let uid = res?.user.uid {
                                 let values = [NewUserKeys.firstName.rawValue: details.firstName,
                                               NewUserKeys.lastName.rawValue: details.lastName,
-                                              NewUserKeys.newUser.rawValue: details.newUser] as [String: Any]
+                                              NewUserKeys.username.rawValue: details.username] as [String: Any]
                                 
                                 Database.database()
                                     .reference()

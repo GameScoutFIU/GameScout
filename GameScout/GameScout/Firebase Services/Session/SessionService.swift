@@ -18,7 +18,7 @@ enum SessionState {
 struct UserSessionDetails {
     let firstName: String
     let lastName: String
-    var newUser: Bool
+    var username: String
 }
 
 protocol SessionService {
@@ -26,7 +26,7 @@ protocol SessionService {
     var userDetails: UserSessionDetails? { get }
     //init()
     func logout()
-    func updateNewUser()
+//    func updateNewUser()
 }
 
 final class SessionServiceImpl: SessionService, ObservableObject {
@@ -50,18 +50,18 @@ final class SessionServiceImpl: SessionService, ObservableObject {
     func logout() {
         try? Auth.auth().signOut()
     }
-    func updateNewUser() {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-        let values = [NewUserKeys.newUser.rawValue: false]
-        
-        Database
-            .database()
-            .reference()
-            .child("users")
-            .child(uid)
-            .updateChildValues(values)
-    }
+//    func updateNewUser() {
+//        guard let uid = Auth.auth().currentUser?.uid else { return }
+//        
+//        let values = [NewUserKeys.username.rawValue: false]
+//        
+//        Database
+//            .database()
+//            .reference()
+//            .child("users")
+//            .child(uid)
+//            .updateChildValues(values)
+//    }
 }
 
 private extension SessionServiceImpl {
@@ -93,14 +93,14 @@ private extension SessionServiceImpl {
                       let value = snapshot.value as? NSDictionary,
                       let firstName = value[NewUserKeys.firstName.rawValue] as? String,
                       let lastName = value[NewUserKeys.lastName.rawValue] as? String,
-                      let newUser = value[NewUserKeys.newUser.rawValue] as? Bool else {
+                      let username = value[NewUserKeys.username.rawValue] as? String else {
                     return
                 }
 
                 DispatchQueue.main.async {
                     self.userDetails = UserSessionDetails(firstName: firstName,
                                                           lastName: lastName,
-                                                          newUser: newUser)
+                                                          username: username)
                 }
             }
     }

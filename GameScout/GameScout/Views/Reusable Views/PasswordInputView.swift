@@ -18,19 +18,19 @@ struct PasswordInputView: View {
             .padding(.leading, sfSymbol != nil ? textFieldLeading : 0)
             .autocapitalization(.none)
             .disableAutocorrection(true)
-            .foregroundStyle(.black)
+            .foregroundStyle(.white)
             .font(.system(size: 20, weight: .semibold, design: .rounded))
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color("mainColor"))
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.white, lineWidth: 1)
             )
             .overlay(
                 HStack {
                     if let sfSymbol = sfSymbol {
                         Image(systemName: sfSymbol)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                             .padding(.leading, 10)
                     }
                     Spacer()

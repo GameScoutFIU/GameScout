@@ -12,7 +12,7 @@ struct NewUserInfo {
     var password: String
     var firstName: String
     var lastName: String
-    var newUser: Bool
+    var username: String
 }
 
 extension NewUserInfo {
@@ -21,6 +21,6 @@ extension NewUserInfo {
                     password: "",
                     firstName: "",
                     lastName: "",
-                    newUser: true)
+                    username: "")
     }
 }

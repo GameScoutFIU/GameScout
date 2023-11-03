@@ -16,7 +16,7 @@ struct ButtonView: View {
     let handler: ActionHandler
     private let cornerRadius: CGFloat = 30
     
-    internal init(title: String, background: Color = .black, foreground: Color = .white, border: Color = .clear, handler: @escaping ButtonView.ActionHandler) {
+    internal init(title: String, background: Color = Color.white, foreground: Color = .black, border: Color = .clear, handler: @escaping ButtonView.ActionHandler) {
         self.title = title
         self.background = background
         self.foreground = foreground

@@ -10,5 +10,5 @@ import Foundation
 struct SessionUserDetails {
     let firstName: String
     let lastName: String
-    let age: String
+    let username: String
 }

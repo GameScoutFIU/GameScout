@@ -18,7 +18,7 @@ struct CloseView: ViewModifier {
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "xmark")
-                }).accentColor(.black)
+                }).accentColor(.white)
             }
     }
 }
