@@ -2,6 +2,7 @@
 //  ContentView.swift
 //  GameScout
 //
+//  Created by Team 4 on 11/3/23.
 //
 
 import SwiftUI
