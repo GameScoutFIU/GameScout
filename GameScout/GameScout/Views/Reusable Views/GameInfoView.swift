@@ -107,7 +107,7 @@ struct Gamedescription: View {
                 
             }.padding([.leading,.trailing])
             
-            ScrollView ([.horizontal]){
+            ScrollView ([.horizontal], showsIndicators: false){
                 HStack {
                     if(imageID == nil) {
                         Rectangle()

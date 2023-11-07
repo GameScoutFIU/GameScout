@@ -49,7 +49,7 @@ struct ListRow: View {
 
 struct SearchView: View {
     @StateObject private var sp = SearchPreviewViewModel()
-
+    @State private var searchTerm = ""
     var body: some View {
         NavigationStack {
             ZStack {
@@ -59,7 +59,14 @@ struct SearchView: View {
                     HStack (spacing: 15){
                         Spacer()
                             .frame(width: 1)
-                        SearchTextView(text: .constant(""), placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
+                        SearchTextView(text: $searchTerm, placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
+                            .onSubmit {
+                                if(searchTerm != "") {
+                                    sp.fetchDataSearch(term: searchTerm)
+                                } else {
+                                    sp.fetchData()
+                                }
+                            }
                         Button {
                             print("Filter")
                         } label: {
@@ -69,13 +76,13 @@ struct SearchView: View {
                         Spacer()
                             .frame(width: 1)
                     }
-                    List(sp.SearchPreviewInfo) {
-                        game in NavigationLink(destination: GameInfoView(id: game.id, name: game.name)) {
-                            ListRow(eachGame: game)
-                        }.listRowBackground(Color("theme"))
-                        .listRowSeparatorTint(.white)
-                    }.scrollContentBackground(.hidden)
-                    .background(Color("theme"))
+                        List(sp.SearchPreviewInfo) {
+                            game in NavigationLink(destination: GameInfoView(id: game.id, name: game.name)) {
+                                ListRow(eachGame: game)
+                            }.listRowBackground(Color("theme"))
+                                .listRowSeparatorTint(.white)
+                        }.scrollContentBackground(.hidden)
+                            .background(Color("theme"))
                 }
             }.onAppear(perform: sp.fetchData)
         }

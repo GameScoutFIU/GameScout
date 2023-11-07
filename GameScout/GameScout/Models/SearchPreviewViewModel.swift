@@ -40,6 +40,35 @@ final class SearchPreviewViewModel: ObservableObject {
         }.resume()
         
     }
+    
+    func fetchDataSearch(term: String) {
+        isRefreshing = true
+        let url = URL(string: "https://api.igdb.com/v4/games")!
+            var request = URLRequest.init(url: url)
+            request.httpBody = "fields name, summary, cover; search \"\(term)\"; limit 100;".data(using: .utf8, allowLossyConversion: false)
+            request.httpMethod = "POST"
+            request.setValue("\(PlistParser.getStringValue(forKey: "Client-ID"))", forHTTPHeaderField: "Client-ID")
+            request.setValue("\(PlistParser.getStringValue(forKey: "Authorization"))", forHTTPHeaderField: "Authorization")
+            request.setValue("application/json", forHTTPHeaderField: "Accept")
+            
+        URLSession.shared.dataTask(with: request) {
+            [weak self] data, response, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Fetch failed(Cover): \(error.localizedDescription)")
+                } else {
+                    let decoder = JSONDecoder()
+                    if let data = data,
+                       let SearchPreviewInfo = try? decoder.decode([GamePreview].self, from: data) {
+                        self?.SearchPreviewInfo = SearchPreviewInfo
+                    } else {
+                        
+                    }
+                    self?.isRefreshing = false
+                }
+            }
+        }.resume()
+    }
 }
 
 final class CoverArtViewModel: ObservableObject {

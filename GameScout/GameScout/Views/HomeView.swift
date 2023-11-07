@@ -32,7 +32,6 @@ struct HomeView: View {
                                     }
                                 }
                             }.padding([.leading, .trailing], 8)
-                            
                         }
                         VStack (alignment: .leading) {
                             GameTabNav(TabTitle: "Recommended Games")
