@@ -15,16 +15,16 @@ struct GameTabNav: View {
                 .bold()
                 .foregroundColor(.white)
                 .padding([.top, .bottom, .leading])
-            HStack {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(0..<5) { _ in
-                            GameTabPreview()
-                        }
-                    }
-                }.padding([.leading, .trailing], 8)
-                    
-            }
+//            HStack {
+//                ScrollView(.horizontal, showsIndicators: false) {
+//                    HStack {
+//                        ForEach(0..<5) { _ in
+//                            GameTabPreview()
+//                        }
+//                    }
+//                }.padding([.leading, .trailing], 8)
+//                    
+//            }
         }
     }
 }

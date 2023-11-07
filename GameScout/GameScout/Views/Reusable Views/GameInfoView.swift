@@ -28,6 +28,8 @@ struct TextOverlayInfo: View {
 }
 
 struct BookMarkButton: View {
+//    @StateObject private var sgvm = SavedGamesViewModel()
+    var gameID: Int
     var body: some View {
         Button(action: {
             print("Bookmark button was tapped")
@@ -67,7 +69,7 @@ struct TopImage: View {
                         .overlay(Color.black.opacity(0.3))
                         .overlay(TextOverlayInfo(name: name, release_dates: "2023"),
                         alignment: .bottomLeading)
-                        .overlay(BookMarkButton(), alignment: .bottomTrailing)
+                        .overlay(BookMarkButton(gameID: screen.id), alignment: .bottomTrailing)
                 }
             }
 //            Image("placeholder")

@@ -9,19 +9,52 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
-    
+    @StateObject private var trgvm = TrendingGameViewModel()
+    @StateObject private var rgvm = RecommendedGameViewModel()
     var body: some View {
         ZStack {
-            Color("theme").edgesIgnoringSafeArea(.all)
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    TopGameView()
-                    
-                    GameTabNav(TabTitle: "Trending")
-                    
-                    GameTabNav(TabTitle: "Recommended Games")
-                }.padding(.horizontal, 16)
-            }.ignoresSafeArea(edges: .top)
+            NavigationStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        NavigationLink(destination: GameInfoView(id: 215769, name: "Cyberpunk 2077: Phantom Liberty")) {
+                            TopGameView()
+                        }
+                        VStack (alignment: .leading){
+                            GameTabNav(TabTitle: "Trending")
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    ForEach(trgvm.TrendingGameInfo) {
+                                        game in
+                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title)){
+                                            
+                                            GameTabPreview(Title: game.title, image_id: game.image_id)
+                                        }
+                                    }
+                                }
+                            }.padding([.leading, .trailing], 8)
+                            
+                        }
+                        VStack (alignment: .leading) {
+                            GameTabNav(TabTitle: "Recommended Games")
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    ForEach(rgvm.RecommendedGameInfo) {
+                                        game in
+                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title)){
+                                            
+                                            GameTabPreview(Title: game.title, image_id: game.image_id)
+                                        }
+                                    }
+                                }
+                            }.padding([.leading, .trailing], 8)
+                        }
+                    }.padding(.horizontal, 16)
+                }.ignoresSafeArea(edges: .top)
+                    .background(Color("theme"))
+            }
+        }.onAppear{
+            trgvm.getData()
+            rgvm.getData()
         }
     }
 }

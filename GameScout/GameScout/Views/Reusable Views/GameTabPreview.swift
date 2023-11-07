@@ -11,7 +11,7 @@ struct GameTabTextOverlay: View {
     let Title: String
     var body: some View {
         ZStack {
-            Text("Starfield")
+            Text(Title)
                 .textCase(.uppercase)
                 .bold()
                 .foregroundColor(.white)
@@ -25,19 +25,34 @@ struct GameTabTextOverlay: View {
 }
 
 struct GameTabPreview: View {
-    let Title: String = "Starfield"
+    let Title: String
+    let image_id: String
     var body: some View {
-            Image("placeholder")
-                .resizable()
+        AsyncImage(url: URL(string: image_id)){ image in
+            image.resizable()
                 .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 4)
-                .clipped()
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+        } placeholder: {
+            Rectangle().foregroundColor(.gray)
                 .ignoresSafeArea()
-                .overlay(GameTabTextOverlay(Title: Title), alignment: .bottomLeading)
+                .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 4)
+                .overlay(ProgressView(), alignment: .center)
+        }.frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 4)
+            .clipped()
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .ignoresSafeArea()
+            .overlay(GameTabTextOverlay(Title: Title), alignment: .bottomLeading)
+        
+//            Image(image_id)
+//                .resizable()
+//                .scaledToFill()
+//                .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 4)
+//                .clipped()
+//                .clipShape(RoundedRectangle(cornerRadius: 10))
+//                .ignoresSafeArea()
+//                .overlay(GameTabTextOverlay(Title: Title), alignment: .bottomLeading)
     }
 }
 
 #Preview {
-    GameTabPreview()
+    GameTabPreview(Title: "Marvel's Spider-Man 2", image_id: "https://images.igdb.com/igdb/image/upload/t_original/scfehq.jpg")
 }
