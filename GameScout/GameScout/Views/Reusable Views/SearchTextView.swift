@@ -1,18 +1,18 @@
 //
-//  TextInputView.swift
+//  SearchTextView.swift
 //  GameScout
 //
-//  Created by Team 4 on 11/3/23.
+//  Created by Erick Rivera on 11/5/23.
 //
 
 import SwiftUI
 
-struct TextInputView: View {
+struct SearchTextView: View {
     @Binding var text: String
     let placeholder: String
     let keyboardType: UIKeyboardType
     let sfSymbol: String?
-    private let textFieldLeading: CGFloat = 30
+    private let textFieldLeading: CGFloat = 35
     
     var body: some View {
         TextField(placeholder, text: $text)
@@ -21,10 +21,10 @@ struct TextInputView: View {
             .keyboardType(keyboardType)
             .autocapitalization(.none)
             .disableAutocorrection(true)
-            .font(.system(size: 20, weight: .semibold, design: .rounded))
-            .padding()
+            .font(.system(size: 15, weight: .semibold, design: .rounded))
+            .padding([.top, .bottom], 6)
             .background(
-                RoundedRectangle(cornerRadius: 15)
+                RoundedRectangle(cornerRadius: 10)
                     .fill(Color("theme"))
                     .stroke(Color.white, lineWidth: 1)
             )
@@ -42,5 +42,5 @@ struct TextInputView: View {
 }
 
 #Preview {
-    TextInputView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+    SearchTextView(text: .constant(""), placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
 }

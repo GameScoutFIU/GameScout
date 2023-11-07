@@ -26,11 +26,13 @@ struct IOS_Weight_AppApp: App {
             NavigationView {
                 switch sessionService.state {
                     case .loggedIn:
-                        HomeView().environmentObject(sessionService)
+                        ContentView().environmentObject(sessionService)
                     case .loggedOut:
                         LoginView()
                 }
             }
+            .navigationBarHidden(true)
+
         }
     }
 }

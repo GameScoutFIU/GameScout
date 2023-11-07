@@ -23,7 +23,7 @@ struct PasswordInputView: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 15)
-                    .fill(Color("mainColor"))
+                    .fill(Color("theme"))
                     .stroke(Color.white, lineWidth: 1)
             )
             .overlay(

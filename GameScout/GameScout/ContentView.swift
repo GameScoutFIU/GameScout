@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var sessionService = SessionServiceImpl()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView().environmentObject(sessionService)
+                .tabItem {Image(systemName: "book.pages")}
+            SearchView().environmentObject(sessionService)
+                .tabItem {Image(systemName: "magnifyingglass")}
+            SavedGamesView().environmentObject(sessionService)
+                .tabItem {Image(systemName: "bookmark.fill")}
+            ProfileView().environmentObject(sessionService)
+                .tabItem {Image(systemName: "person")}
         }
-        .padding()
+        .toolbarBackground(Color("theme"), for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .accentColor(.white)
+        
+        //change tabview bar color to theme
+        
     }
 }
 

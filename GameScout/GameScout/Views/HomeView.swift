@@ -9,35 +9,27 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
-    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-    }
     
     var body: some View {
         ZStack {
             Color("theme").edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading, spacing: 16) {
+            ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text("First Name: \(sessionService.userDetails?.firstName ?? "N/A")")
-                       .foregroundColor(.white)
-                    Text("Last Name: \(sessionService.userDetails?.lastName ?? "N/A")")
-                        .foregroundColor(.white)
-                    Text("Username: \(sessionService.userDetails?.username ?? "N/A")")
-                        .foregroundColor(.white)
-                }
-                
-                ButtonView(title: "Logout") {
-                    sessionService.logout()
-                }
-            }.padding(.horizontal, 16)
-        }.navigationTitle("Home")
+                    TopGameView()
+                    
+                    GameTabNav(TabTitle: "Trending")
+                    
+                    GameTabNav(TabTitle: "Recommended Games")
+                }.padding(.horizontal, 16)
+            }.ignoresSafeArea(edges: .top)
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            HomeView().environmentObject(SessionServiceImpl())
+            HomeView().environmentObject(SessionServiceImpl()).navigationBarHidden(true)
         }
     }
 }
