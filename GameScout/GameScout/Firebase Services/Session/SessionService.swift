@@ -26,7 +26,7 @@ protocol SessionService {
     var userDetails: UserSessionDetails? { get }
     //init()
     func logout()
-//    func updateNewUser()
+//    func updateAvatar()
 }
 
 final class SessionServiceImpl: SessionService, ObservableObject {
@@ -50,7 +50,8 @@ final class SessionServiceImpl: SessionService, ObservableObject {
     func logout() {
         try? Auth.auth().signOut()
     }
-//    func updateNewUser() {
+    
+//    func updateAvatar() {
 //        guard let uid = Auth.auth().currentUser?.uid else { return }
 //        
 //        let values = [NewUserKeys.username.rawValue: false]

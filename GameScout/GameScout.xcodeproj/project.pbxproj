@@ -84,6 +84,9 @@
 		A7B5BCEE2AFAD74300990F30 /* RecommendedGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */; };
 		A7B5BCEF2AFAD74300990F30 /* RecommendedGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */; };
 		A7B5BCF02AFAD74300990F30 /* RecommendedGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */; };
+		A7B5BCF22AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
+		A7B5BCF32AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
+		A7B5BCF42AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,7 @@
 		A7B5BCE52AFAC1C400990F30 /* TopGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGameViewModel.swift; sourceTree = "<group>"; };
 		A7B5BCE92AFAD73500990F30 /* TrendingGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGameViewModel.swift; sourceTree = "<group>"; };
 		A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGameViewModel.swift; sourceTree = "<group>"; };
+		A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +270,7 @@
 				A76EE0252AF8335300A4C6C9 /* SavedGamesView.swift */,
 				A76EE0272AF8336A00A4C6C9 /* ProfileView.swift */,
 				A76EDFD82AF56D7000A4C6C9 /* Reusable Views */,
+				A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				A76EDFAE2AF56D3C00A4C6C9 /* GameScoutApp.swift in Sources */,
 				A7B5BCC72AF9D37400990F30 /* ScreenshotViewModel.swift in Sources */,
 				A76EDFE22AF5708B00A4C6C9 /* ButtonView.swift in Sources */,
+				A7B5BCF22AFAF6EA00990F30 /* PasswordResetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +592,7 @@
 				A7B5BCE72AFAC1C400990F30 /* TopGameViewModel.swift in Sources */,
 				A7B5BCEF2AFAD74300990F30 /* RecommendedGameViewModel.swift in Sources */,
 				A7B5BCDB2AFAAD5500990F30 /* SavedGames.swift in Sources */,
+				A7B5BCF32AFAF6EA00990F30 /* PasswordResetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +603,7 @@
 				A76EDFC92AF56D3D00A4C6C9 /* GameScoutUITests.swift in Sources */,
 				A7B5BCE42AFAC15E00990F30 /* GameCatalog.swift in Sources */,
 				A7B5BCF02AFAD74300990F30 /* RecommendedGameViewModel.swift in Sources */,
+				A7B5BCF42AFAF6EA00990F30 /* PasswordResetView.swift in Sources */,
 				A76EDFCB2AF56D3D00A4C6C9 /* GameScoutUITestsLaunchTests.swift in Sources */,
 				A7B5BCEC2AFAD73500990F30 /* TrendingGameViewModel.swift in Sources */,
 				A7B5BCE82AFAC1C400990F30 /* TopGameViewModel.swift in Sources */,

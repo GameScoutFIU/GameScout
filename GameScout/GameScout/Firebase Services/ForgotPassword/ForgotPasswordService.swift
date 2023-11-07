@@ -7,7 +7,7 @@
 
 import Combine
 import Foundation
-import FirebaseAuth
+import Firebase
 
 protocol ForgotPasswordService {
     func sendPasswordReset(to email: String) -> AnyPublisher<Void, Error>

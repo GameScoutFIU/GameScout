@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
+    @State private var showResetView = false
     var body: some View {
         ZStack {
             Color("theme").edgesIgnoringSafeArea(.all)
@@ -45,9 +46,15 @@ struct ProfileView: View {
                 }
                 //User Change Password Tab
                 VStack (alignment: .leading) {
-                    Text("Change Password")
-                        .foregroundColor(.white)
-                        .padding(.leading)
+                    Button {
+                        showResetView.toggle()
+                    } label: {
+                        Text("Change Password")
+                            .foregroundColor(.white)
+                            .padding(.leading)
+                    }.sheet(isPresented: $showResetView) {
+                        PasswordResetView()
+                    }
                     Divider()
                         .background(Color.white)
                         .padding(10)
