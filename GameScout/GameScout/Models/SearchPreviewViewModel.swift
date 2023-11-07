@@ -18,7 +18,7 @@ final class SearchPreviewViewModel: ObservableObject {
             request.httpBody = "fields name, summary, cover; limit 100;".data(using: .utf8, allowLossyConversion: false)
             request.httpMethod = "POST"
             request.setValue("\(PlistParser.getStringValue(forKey: "Client-ID"))", forHTTPHeaderField: "Client-ID")
-        request.setValue("\(PlistParser.getStringValue(forKey: "Authorization"))", forHTTPHeaderField: "Authorization")
+            request.setValue("\(PlistParser.getStringValue(forKey: "Authorization"))", forHTTPHeaderField: "Authorization")
             request.setValue("application/json", forHTTPHeaderField: "Accept")
             
         URLSession.shared.dataTask(with: request) {
@@ -77,30 +77,3 @@ final class CoverArtViewModel: ObservableObject {
         
     }
 }
-
-//func coverGrabber(id: Int) -> String {
-//    var image_id = ""
-//    let url = URL(string: "https://api.igdb.com/v4/covers")!
-//    var request = URLRequest.init(url: url)
-//    request.httpBody = "fields image_id; where id=\(id);".data(using: .utf8, allowLossyConversion: false)
-//    request.httpMethod = "POST"
-//    request.setValue("7el5i0mj1vlr6yt4c158qh9z45llc4", forHTTPHeaderField: "Client-ID")
-//    request.setValue("Bearer gpfwrlxplr59kw985o1pzlmxczi0wd", forHTTPHeaderField: "Authorization")
-//    request.setValue("application/json", forHTTPHeaderField: "Accept")
-//    
-//    URLSession.shared.dataTask(with: request) { data, response, error in
-//        do {
-//            if let data = data {
-//                let decodedResponse = try JSONDecoder().decode([CoverArt].self, from: data)
-//                DispatchQueue.main.async {
-//                    image_id = decodedResponse[0].image_id
-//                }
-//                return
-//            }
-//        } catch {
-//            print("Fetch failed(Cover): \(error)")
-//        }
-//    }.resume()
-//    print(image_id)
-//    return image_id
-//}

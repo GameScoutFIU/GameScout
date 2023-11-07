@@ -15,8 +15,8 @@ final class FullGameViewModel: ObservableObject {
             var request = URLRequest.init(url: url)
             request.httpBody = "fields name, summary, genres, screenshots, videos, release_dates, rating; where id = \(ID);".data(using: .utf8, allowLossyConversion: false)
             request.httpMethod = "POST"
-            request.setValue("7el5i0mj1vlr6yt4c158qh9z45llc4", forHTTPHeaderField: "Client-ID")
-            request.setValue("Bearer gpfwrlxplr59kw985o1pzlmxczi0wd", forHTTPHeaderField: "Authorization")
+            request.setValue("\(PlistParser.getStringValue(forKey: "Client-ID"))", forHTTPHeaderField: "Client-ID")
+            request.setValue("\(PlistParser.getStringValue(forKey: "Authorization"))", forHTTPHeaderField: "Authorization")
             request.setValue("application/json", forHTTPHeaderField: "Accept")
         
         URLSession.shared.dataTask(with: request) {
