@@ -13,6 +13,7 @@ struct NewUserInfo {
     var firstName: String
     var lastName: String
     var username: String
+    var avatarID: String
 }
 
 extension NewUserInfo {
@@ -21,6 +22,7 @@ extension NewUserInfo {
                     password: "",
                     firstName: "",
                     lastName: "",
-                    username: "")
+                    username: "",
+                    avatarID: "")
     }
 }

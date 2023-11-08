@@ -18,7 +18,8 @@ enum SessionState {
 struct UserSessionDetails {
     let firstName: String
     let lastName: String
-    var username: String
+    let username: String
+    var avatarID: String
 }
 
 protocol SessionService {
@@ -51,18 +52,32 @@ final class SessionServiceImpl: SessionService, ObservableObject {
         try? Auth.auth().signOut()
     }
     
-//    func updateAvatar() {
-//        guard let uid = Auth.auth().currentUser?.uid else { return }
-//        
-//        let values = [NewUserKeys.username.rawValue: false]
-//        
+    func updateAvatar(avatarID: String) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        let values = [NewUserKeys.avatarID.rawValue: avatarID]
+        
+        //make database call with error handler
+        let userRef = Database.database().reference().child("users").child(uid)
+        
+        userRef.updateChildValues(values) { error, ref in
+            if let error = error {
+                print("Failed to update avatarID: \(error)")
+                return
+            }
+            
+            print("Successfully updated avatarID")
+        }
 //        Database
 //            .database()
 //            .reference()
 //            .child("users")
 //            .child(uid)
 //            .updateChildValues(values)
-//    }
+        
+           
+        
+    }
 }
 
 private extension SessionServiceImpl {
@@ -94,14 +109,16 @@ private extension SessionServiceImpl {
                       let value = snapshot.value as? NSDictionary,
                       let firstName = value[NewUserKeys.firstName.rawValue] as? String,
                       let lastName = value[NewUserKeys.lastName.rawValue] as? String,
-                      let username = value[NewUserKeys.username.rawValue] as? String else {
+                      let username = value[NewUserKeys.username.rawValue] as? String,
+                      let avatarID = value[NewUserKeys.avatarID.rawValue] as? String else {
                     return
                 }
 
                 DispatchQueue.main.async {
                     self.userDetails = UserSessionDetails(firstName: firstName,
                                                           lastName: lastName,
-                                                          username: username)
+                                                          username: username,
+                                                          avatarID: avatarID)
                 }
             }
     }

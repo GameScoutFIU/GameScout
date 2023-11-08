@@ -21,7 +21,7 @@ struct ProfileView: View {
                 //User Info Tab
                 HStack {
                     //Avatar Image
-                    Image("Avatar3")
+                    Image(sessionService.userDetails?.avatarID ?? "Avatar1")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 60, height: 60)
@@ -45,7 +45,7 @@ struct ProfileView: View {
                             .foregroundColor(.white)
                             .padding(.leading)
                     }.sheet(isPresented: $showAvatarView) {
-                        ChangeAvatarView()
+                        ChangeAvatarView(avatarDBID: sessionService.userDetails?.avatarID ?? "Avatar1")
                             .presentationDetents([.medium])
                             .presentationDragIndicator(.visible)
                     }

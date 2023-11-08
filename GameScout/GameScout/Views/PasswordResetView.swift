@@ -29,17 +29,7 @@ struct PasswordResetView: View {
                     .multilineTextAlignment(.center)
             }
             } else {
-                VStack {
-                    Image(systemName: "checkmark.circle")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .foregroundColor(.white)
-                    Text("We've sent you an email to reset your password!")
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                }
+                SuccessUpdateView(message: "We've sent you an email to reset your password!")
             }
         }
     }

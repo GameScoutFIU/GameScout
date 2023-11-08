@@ -11,4 +11,5 @@ struct SessionUserDetails {
     let firstName: String
     let lastName: String
     let username: String
+    let avatarID: String
 }

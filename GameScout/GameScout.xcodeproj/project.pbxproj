@@ -88,6 +88,7 @@
 		A7B5BCF32AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
 		A7B5BCF42AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
 		A7B5BCF62AFB44B300990F30 /* ChangeAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF52AFB44B300990F30 /* ChangeAvatarView.swift */; };
+		A7B5BCF82AFB64DD00990F30 /* SuccessUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF72AFB64DD00990F30 /* SuccessUpdateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,7 @@
 		A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGameViewModel.swift; sourceTree = "<group>"; };
 		A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		A7B5BCF52AFB44B300990F30 /* ChangeAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAvatarView.swift; sourceTree = "<group>"; };
+		A7B5BCF72AFB64DD00990F30 /* SuccessUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 				A76EE02D2AF841D700A4C6C9 /* GameTabPreview.swift */,
 				A76EE0312AF84F8200A4C6C9 /* SavedGamePreview.swift */,
 				A76EE0352AF859B300A4C6C9 /* GameInfoView.swift */,
+				A7B5BCF72AFB64DD00990F30 /* SuccessUpdateView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				A76EE0302AF8430A00A4C6C9 /* GameTabNav.swift in Sources */,
 				A7B5BCE62AFAC1C400990F30 /* TopGameViewModel.swift in Sources */,
 				A76EDFDC2AF5704500A4C6C9 /* NewUserView.swift in Sources */,
+				A7B5BCF82AFB64DD00990F30 /* SuccessUpdateView.swift in Sources */,
 				A7B5BCDE2AFAADA800990F30 /* SavedGamesViewModel.swift in Sources */,
 				A7B5BCE22AFAC15E00990F30 /* GameCatalog.swift in Sources */,
 				A76EDFE82AF5720200A4C6C9 /* NewUserInfo.swift in Sources */,

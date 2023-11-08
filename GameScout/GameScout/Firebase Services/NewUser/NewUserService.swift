@@ -14,6 +14,7 @@ enum NewUserKeys: String {
     case firstName
     case lastName
     case username
+    case avatarID
 }
 
 protocol NewUserService {
@@ -33,7 +34,8 @@ final class NewUserServiceImpl: NewUserService {
                             if let uid = res?.user.uid {
                                 let values = [NewUserKeys.firstName.rawValue: details.firstName,
                                               NewUserKeys.lastName.rawValue: details.lastName,
-                                              NewUserKeys.username.rawValue: details.username] as [String: Any]
+                                              NewUserKeys.username.rawValue: details.username,
+                                              NewUserKeys.avatarID.rawValue: details.avatarID] as [String: Any]
                                 
                                 Database.database()
                                     .reference()

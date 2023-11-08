@@ -31,7 +31,8 @@ final class NewUserViewImpl: ObservableObject, NewUserView {
                                                password: "",
                                                firstName: "",
                                                lastName: "",
-                                               username: "")
+                                               username: "",
+                                               avatarID: "Avatar1")
     private var subscriptions = Set<AnyCancellable>()
     
     init(service: NewUserService) {
