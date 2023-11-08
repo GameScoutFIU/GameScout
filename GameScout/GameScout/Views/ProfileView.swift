@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     @EnvironmentObject var sessionService: SessionServiceImpl
     @State private var showResetView = false
+    @State private var showAvatarView = false
     var body: some View {
         ZStack {
             Color("theme").edgesIgnoringSafeArea(.all)
@@ -20,7 +21,7 @@ struct ProfileView: View {
                 //User Info Tab
                 HStack {
                     //Avatar Image
-                    Image("placeholder")
+                    Image("Avatar3")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 60, height: 60)
@@ -37,9 +38,17 @@ struct ProfileView: View {
                     .padding(10)
                 //User Change Avatar Tab
                 VStack (alignment: .leading) {
-                    Text("Change Avatar")
-                        .foregroundColor(.white)
-                        .padding(.leading)
+                    Button {
+                        showAvatarView.toggle()
+                    } label: {
+                        Text("Change Avatar")
+                            .foregroundColor(.white)
+                            .padding(.leading)
+                    }.sheet(isPresented: $showAvatarView) {
+                        ChangeAvatarView()
+                            .presentationDetents([.medium])
+                            .presentationDragIndicator(.visible)
+                    }
                     Divider()
                         .background(Color.white)
                         .padding(10)

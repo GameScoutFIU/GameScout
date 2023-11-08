@@ -87,6 +87,7 @@
 		A7B5BCF22AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
 		A7B5BCF32AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
 		A7B5BCF42AFAF6EA00990F30 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */; };
+		A7B5BCF62AFB44B300990F30 /* ChangeAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5BCF52AFB44B300990F30 /* ChangeAvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		A7B5BCE92AFAD73500990F30 /* TrendingGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGameViewModel.swift; sourceTree = "<group>"; };
 		A7B5BCED2AFAD74300990F30 /* RecommendedGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGameViewModel.swift; sourceTree = "<group>"; };
 		A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		A7B5BCF52AFB44B300990F30 /* ChangeAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +271,9 @@
 				A76EE0232AF8320F00A4C6C9 /* SearchView.swift */,
 				A76EE0252AF8335300A4C6C9 /* SavedGamesView.swift */,
 				A76EE0272AF8336A00A4C6C9 /* ProfileView.swift */,
-				A76EDFD82AF56D7000A4C6C9 /* Reusable Views */,
 				A7B5BCF12AFAF6EA00990F30 /* PasswordResetView.swift */,
+				A7B5BCF52AFB44B300990F30 /* ChangeAvatarView.swift */,
+				A76EDFD82AF56D7000A4C6C9 /* Reusable Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				A76EDFF12AF5729B00A4C6C9 /* ForgotPasswordViewModel.swift in Sources */,
 				A76EE03D2AF97F7100A4C6C9 /* CoverArt.swift in Sources */,
 				A7B5BCEA2AFAD73500990F30 /* TrendingGameViewModel.swift in Sources */,
+				A7B5BCF62AFB44B300990F30 /* ChangeAvatarView.swift in Sources */,
 				A76EE0242AF8320F00A4C6C9 /* SearchView.swift in Sources */,
 				A7B5BCDA2AFAAD5500990F30 /* SavedGames.swift in Sources */,
 				A76EDFF62AF5734200A4C6C9 /* LoginService.swift in Sources */,
