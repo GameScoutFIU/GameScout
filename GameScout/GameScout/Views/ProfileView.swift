@@ -54,6 +54,8 @@ struct ProfileView: View {
                             .padding(.leading)
                     }.sheet(isPresented: $showResetView) {
                         PasswordResetView()
+                            .presentationDetents([.medium])
+                            .presentationDragIndicator(.visible)
                     }
                     Divider()
                         .background(Color.white)

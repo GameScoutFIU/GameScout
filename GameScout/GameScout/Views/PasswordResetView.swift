@@ -15,21 +15,31 @@ struct PasswordResetView: View {
     var body: some View {
         ZStack {
             Color("theme").edgesIgnoringSafeArea(.all)
-            VStack(spacing: 16) {
+            if (showAlert == false) {
+                VStack(spacing: 16) {
                 TextInputView(text: $vm.email, placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
                     .padding(.horizontal, 16)
                 ButtonView(title: "Reset Password") {
                     vm.sendPasswordReset()
-//                    presentationMode.wrappedValue.dismiss()
                     showAlert.toggle()
                 }.padding(.horizontal, 16)
-                    .alert("We'll send you an email to reset your password through Firebase", isPresented: $showAlert) {
-                        Button("OK", role: .cancel) {sessionService.logout()}
-                    }
-                
                 Text("Password Safety is Important! \nMake sure to use a strong password!\n")
                     .foregroundStyle(.white)
                     .font(.callout)
+                    .multilineTextAlignment(.center)
+            }
+            } else {
+                VStack {
+                    Image(systemName: "checkmark.circle")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(.white)
+                    Text("We've sent you an email to reset your password!")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
             }
         }
     }
