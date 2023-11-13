@@ -41,6 +41,11 @@ struct TextInputView: View {
     }
 }
 
-#Preview {
-    TextInputView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+//#Preview {
+//    TextInputView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+//}
+struct TextInputView_Previews: PreviewProvider {
+    static var previews: some View {
+        TextInputView(text: .constant(""), placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
+    }
 }

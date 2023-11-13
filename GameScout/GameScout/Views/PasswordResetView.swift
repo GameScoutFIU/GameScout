@@ -35,6 +35,11 @@ struct PasswordResetView: View {
     }
 }
 
-#Preview {
-    PasswordResetView()
+//#Preview {
+//    PasswordResetView()
+//}
+struct PasswordResetView_Previews: PreviewProvider {
+    static var previews: some View {
+        PasswordResetView()
+    }
 }

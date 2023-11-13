@@ -89,6 +89,11 @@ struct ProfileView: View {
     }
 }
 
-#Preview {
-    ProfileView().environmentObject(SessionServiceImpl())
+//#Preview {
+//    ProfileView().environmentObject(SessionServiceImpl())
+//}
+struct ProfileView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileView().environmentObject(SessionServiceImpl())
+    }
 }

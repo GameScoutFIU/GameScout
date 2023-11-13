@@ -24,6 +24,12 @@ struct SuccessUpdateView: View {
     }
 }
 
-#Preview {
-    SuccessUpdateView(message: "Success").background(Color("theme"))
+//#Preview {
+//    SuccessUpdateView(message: "Success").background(Color("theme"))
+//}
+
+struct SuccessUpdateView_Previews: PreviewProvider {
+    static var previews: some View {
+        SuccessUpdateView(message: "Success").background(Color("theme"))
+    }
 }

@@ -41,6 +41,11 @@ struct SearchTextView: View {
     }
 }
 
-#Preview {
-    SearchTextView(text: .constant(""), placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
+//#Preview {
+//    SearchTextView(text: .constant(""), placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
+//}
+struct SearchTextView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchTextView(text: .constant(""), placeholder: "Search", keyboardType: .default, sfSymbol: "magnifyingglass")
+    }
 }

@@ -53,6 +53,12 @@ struct GameTabPreview: View {
     }
 }
 
-#Preview {
-    GameTabPreview(Title: "Marvel's Spider-Man 2", image_id: "https://images.igdb.com/igdb/image/upload/t_original/scfehq.jpg")
+//#Preview {
+//    GameTabPreview(Title: "Marvel's Spider-Man 2", image_id: "https://images.igdb.com/igdb/image/upload/t_original/scfehq.jpg")
+//}
+
+struct GameTabPreviewView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameTabPreview(Title: "Marvel's Spider-Man 2", image_id: "https://images.igdb.com/igdb/image/upload/t_original/scfehq.jpg")
+    }
 }

@@ -57,6 +57,11 @@ struct ChangeAvatarView: View {
     }
 }
 
-#Preview {
-    ChangeAvatarView(avatarDBID: "Avatar1")
+//#Preview {
+//    ChangeAvatarView(avatarDBID: "Avatar1")
+//}
+struct ChangeAvatarView_Previews: PreviewProvider {
+    static var previews: some View {
+        ChangeAvatarView(avatarDBID: "Avatar1")
+    }
 }

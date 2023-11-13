@@ -89,6 +89,11 @@ struct SearchView: View {
     }
 }
 
-#Preview {
-    SearchView()
+//#Preview {
+//    SearchView()
+//}
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
+    }
 }

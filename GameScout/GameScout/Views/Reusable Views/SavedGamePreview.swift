@@ -21,6 +21,11 @@ struct SavedGamePreview: View {
     }
 }
 
-#Preview {
-    SavedGamePreview()
+//#Preview {
+//    SavedGamePreview()
+//}
+struct SavedGamePreviewView_Previews: PreviewProvider {
+    static var previews: some View {
+        SavedGamePreview()
+    }
 }

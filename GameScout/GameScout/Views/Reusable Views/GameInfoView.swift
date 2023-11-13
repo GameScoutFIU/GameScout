@@ -163,6 +163,11 @@ struct GameInfoView: View {
     }
 }
 
-#Preview {
-    GameInfoView(id: 32, name: "Starfield")
+//#Preview {
+//    GameInfoView(id: 32, name: "Starfield")
+//}
+struct GameInfoView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameInfoView(id: 32, name: "Starfield")
+    }
 }

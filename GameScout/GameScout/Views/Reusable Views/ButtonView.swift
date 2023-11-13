@@ -37,8 +37,15 @@ struct ButtonView: View {
     }
 }
 
-#Preview {
-    ButtonView(title: "Sign Up", background: .black, foreground: .white, border: .clear) {
-        print("Button tapped")
+//#Preview {
+//    ButtonView(title: "Sign Up", background: .black, foreground: .white, border: .clear) {
+//        print("Button tapped")
+//    }
+//}
+struct ButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        ButtonView(title: "Sign Up", background: .black, foreground: .white, border: .clear) {
+                print("Button tapped")
+            }
     }
 }

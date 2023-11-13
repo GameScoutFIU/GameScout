@@ -40,6 +40,11 @@ struct PasswordInputView: View {
     }
 }
 
-#Preview {
-    PasswordInputView(password: .constant(""), placeholder: "Password", sfSymbol: "lock")
+//#Preview {
+//    PasswordInputView(password: .constant(""), placeholder: "Password", sfSymbol: "lock")
+//}
+struct PasswordInputViewView_Previews: PreviewProvider {
+    static var previews: some View {
+        PasswordInputView(password: .constant(""), placeholder: "Password", sfSymbol: "lock")
+    }
 }

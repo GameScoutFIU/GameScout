@@ -57,6 +57,12 @@ struct TopGameView: View {
     }
 }
 
-#Preview {
-    TopGameView()
+//#Preview {
+//    TopGameView()
+//}
+
+struct TopGameView_Previews: PreviewProvider {
+    static var previews: some View {
+        TopGameView()
+    }
 }

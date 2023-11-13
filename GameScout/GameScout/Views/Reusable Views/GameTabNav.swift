@@ -29,6 +29,11 @@ struct GameTabNav: View {
     }
 }
 
-#Preview {
-    GameTabNav(TabTitle: "Trending")
+//#Preview {
+//    GameTabNav(TabTitle: "Trending")
+//}
+struct GameTabNavView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameTabNav(TabTitle: "Trending")
+    }
 }
