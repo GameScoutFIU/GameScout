@@ -2,7 +2,16 @@
 
 # GameScout
 
-### Demo Day prep video
+### Demo Day prep video (Gif)
+<div>
+    <a href="https://www.loom.com/share/7185df8c9e7f46d9b4790cfde3d595f5">
+    </a>
+    <a href="https://www.loom.com/share/7185df8c9e7f46d9b4790cfde3d595f5">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7185df8c9e7f46d9b4790cfde3d595f5-with-play.gif">
+    </a>
+  </div>
+
+### Demo Day prep video (Youtube)
 
 https://youtu.be/LQQnQCGKoDs
 
