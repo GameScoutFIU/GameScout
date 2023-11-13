@@ -4,13 +4,13 @@
 
 ### Demo Day prep video (Gif)
 <div>
-    <a href="https://www.loom.com/share/7185df8c9e7f46d9b4790cfde3d595f5">
+    <a href="https://www.loom.com/share/3cba31f13cda44d5ac5cae81d387399e">
     </a>
-    <a href="https://www.loom.com/share/7185df8c9e7f46d9b4790cfde3d595f5">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/7185df8c9e7f46d9b4790cfde3d595f5-with-play.gif">
+    <a href="https://www.loom.com/share/3cba31f13cda44d5ac5cae81d387399e">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3cba31f13cda44d5ac5cae81d387399e-with-play.gif">
     </a>
   </div>
-
+  
 ### Demo Day prep video (Youtube)
 
 https://youtu.be/LQQnQCGKoDs
