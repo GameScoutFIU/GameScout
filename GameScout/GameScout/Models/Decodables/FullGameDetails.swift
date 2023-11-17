@@ -9,10 +9,10 @@ import SwiftUI
 
 struct FullGameDetails: Identifiable, Decodable {
     let id: Int
+    let first_release_date: Int?
     let genres: [Int]?
     let name: String
     let rating: Double?
-    let release_dates: [Int]?
     let screenshots: [Int]?
     let summary: String?
     let videos: [Int]?

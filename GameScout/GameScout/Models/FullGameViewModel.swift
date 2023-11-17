@@ -13,7 +13,7 @@ final class FullGameViewModel: ObservableObject {
     func fetchData(ID: Int) {
         let url = URL(string: "https://api.igdb.com/v4/games")!
             var request = URLRequest.init(url: url)
-            request.httpBody = "fields name, summary, genres, screenshots, videos, release_dates, rating; where id = \(ID);".data(using: .utf8, allowLossyConversion: false)
+            request.httpBody = "fields name, summary, genres, screenshots, videos, first_release_date, rating; where id = \(ID);".data(using: .utf8, allowLossyConversion: false)
             request.httpMethod = "POST"
             request.setValue("\(PlistParser.getStringValue(forKey: "Client-ID"))", forHTTPHeaderField: "Client-ID")
             request.setValue("\(PlistParser.getStringValue(forKey: "Authorization"))", forHTTPHeaderField: "Authorization")

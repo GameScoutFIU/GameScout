@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TextOverlayInfo: View {
     var name: String
-    var release_dates: String
+    var release_dates: Int
+    var year: String {
+        let year = NSDate(timeIntervalSince1970: TimeInterval(release_dates))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        let date = dateFormatter.string(from: year as Date)
+        return date
+    }
     var body: some View {
         ZStack {
             VStack (alignment: .leading){
@@ -18,10 +25,13 @@ struct TextOverlayInfo: View {
                     .bold()
                     .foregroundStyle(.white)
                     .font(.title)
-                Text("2023")
-                    .foregroundStyle(.white)
-                //                .padding(.leading)
-                //                .padding(.bottom)
+                if(release_dates != 0) {
+                    Text(year)
+                        .foregroundStyle(.white)
+                } else {
+                    Text("N/A")
+                        .foregroundStyle(.white)
+                }
             }
         }.padding(6)
     }
@@ -67,7 +77,7 @@ struct TopImage: View {
                         .clipped()
                         .ignoresSafeArea()
                         .overlay(Color.black.opacity(0.3))
-                        .overlay(TextOverlayInfo(name: name, release_dates: "2023"),
+                        .overlay(TextOverlayInfo(name: name, release_dates: release_dates),
                         alignment: .bottomLeading)
                         .overlay(BookMarkButton(gameID: screen.id), alignment: .bottomTrailing)
                 }
@@ -93,10 +103,13 @@ struct Gamedescription: View {
     var imageID: [Int]?
     var summary: String?
     var rating: Double?
+    var genresName: String {
+        return genreChecker(genreID: genres ?? [0])
+    }
     var body: some View {
         VStack (alignment: .leading){
             HStack {
-                Text("Horror")
+                Text(genresName)
                     .textCase(.uppercase)
                     .bold()
                     .foregroundStyle(.white)
@@ -154,7 +167,7 @@ struct GameInfoView: View {
             VStack (alignment: .leading, spacing: 20){
                 //Call TopImage passing obs name and release_dates
                 ForEach(fg.FullGameInfo) { game in
-                    TopImage(name: game.name, release_dates: 2023, imageID: game.screenshots)
+                    TopImage(name: game.name, release_dates: game.first_release_date ?? 0, imageID: game.screenshots)
                     Gamedescription(genres: game.genres, videoID: game.videos, imageID: game.screenshots, summary: game.summary, rating: game.rating)
                 }
                 Spacer()
