@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameCatalog: Identifiable, Codable {
     let id: String
+    let cover: Int
     let gameID: Int
     let image_id: String
     let title: String

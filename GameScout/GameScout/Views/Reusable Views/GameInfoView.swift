@@ -38,16 +38,44 @@ struct TextOverlayInfo: View {
 }
 
 struct BookMarkButton: View {
-//    @StateObject private var sgvm = SavedGamesViewModel()
+    @StateObject private var sgvm = SavedGamesViewModel()
+    @EnvironmentObject var sessionService: SessionServiceImpl
     var gameID: Int
+    var title: String
+    var cover: Int
+    @State var gameSaved = false
     var body: some View {
-        Button(action: {
-            print("Bookmark button was tapped")
-        }) {
-            Image(systemName: "bookmark.fill")
-                .font(.title)
-                .foregroundColor(.white)
-                .padding([.bottom,.trailing], 6)
+        ZStack {
+            if (gameSaved) {
+                Button(action: {
+                    print("Bookmark button was tapped")
+                    sgvm.deleteSavedGame(gameID: gameID, username: sessionService.userDetails?.username ?? "N/A")
+                    gameSaved.toggle()
+                }) {
+                    Image(systemName: "bookmark.fill")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding([.bottom,.trailing], 6)
+                }
+            } else {
+                Button(action: {
+                    sgvm.addSavedGame(gameID: gameID, username: sessionService.userDetails?.username ?? "N/A", image_id: cover, title: title)
+                    gameSaved.toggle()
+                }) {
+                    Image(systemName: "bookmark")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding([.bottom,.trailing], 6)
+                }
+            }
+        }.onAppear {
+            if (sgvm.contains(gameID: gameID, username: sessionService.userDetails?.username ?? "N/A")) {
+                print("exists")
+                print("test section \(sessionService.userDetails?.username ?? "N/A") and \(gameID)")
+                gameSaved = true
+            } else {
+                print("failed")
+            }
         }
     }
 }
@@ -57,6 +85,8 @@ struct TopImage: View {
     var name: String
     var release_dates: Int
     var imageID: [Int]?
+    var gameID: Int
+    var cover: Int
     var body: some View {
         ZStack (alignment: .bottomLeading){
             if(imageID == nil) {
@@ -65,6 +95,7 @@ struct TopImage: View {
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
                     .foregroundStyle(.gray)
                     .overlay(Text("No Images").foregroundStyle(.white), alignment: .center)
+                    .overlay(BookMarkButton(gameID: gameID, title: name, cover: cover), alignment: .bottomTrailing)
             } else {
                 ForEach(svm.ScreenshotInfo) { screen in
                     AsyncImage(url: URL(string: "https://images.igdb.com/igdb/image/upload/t_original/\(screen.image_id).jpg")) { image in
@@ -79,19 +110,9 @@ struct TopImage: View {
                         .overlay(Color.black.opacity(0.3))
                         .overlay(TextOverlayInfo(name: name, release_dates: release_dates),
                         alignment: .bottomLeading)
-                        .overlay(BookMarkButton(gameID: screen.id), alignment: .bottomTrailing)
+                        .overlay(BookMarkButton(gameID: gameID, title: name, cover: cover), alignment: .bottomTrailing)
                 }
             }
-//            Image("placeholder")
-//                .resizable()
-//                .scaledToFill()
-//                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
-//                .clipped()
-//                .ignoresSafeArea()
-//                .overlay(Color.black.opacity(0.3))
-//                .overlay(TextOverlayInfo(name: name, release_dates: "2023"),
-//                alignment: .bottomLeading)
-//                .overlay(BookMarkButton(), alignment: .bottomTrailing)
         }.onAppear{svm.fetchData(ID: imageID ?? [0])}
     }
 }
@@ -161,13 +182,14 @@ struct GameInfoView: View {
     @StateObject private var fg = FullGameViewModel()
     var id: Int
     var name: String
+    var cover: Int
     var body: some View {
         ZStack {
             Color("theme").edgesIgnoringSafeArea(.all)
             VStack (alignment: .leading, spacing: 20){
                 //Call TopImage passing obs name and release_dates
                 ForEach(fg.FullGameInfo) { game in
-                    TopImage(name: game.name, release_dates: game.first_release_date ?? 0, imageID: game.screenshots)
+                    TopImage(name: game.name, release_dates: game.first_release_date ?? 0, imageID: game.screenshots, gameID: id, cover: cover)
                     Gamedescription(genres: game.genres, videoID: game.videos, imageID: game.screenshots, summary: game.summary, rating: game.rating)
                 }
                 Spacer()
@@ -181,6 +203,6 @@ struct GameInfoView: View {
 //}
 struct GameInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        GameInfoView(id: 32, name: "Starfield")
+        GameInfoView(id: 32, name: "Starfield", cover: 280467)
     }
 }

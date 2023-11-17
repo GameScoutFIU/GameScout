@@ -296,7 +296,6 @@
 				A76EE0312AF84F8200A4C6C9 /* SavedGamePreview.swift */,
 				A76EE0352AF859B300A4C6C9 /* GameInfoView.swift */,
 				A7B5BCF72AFB64DD00990F30 /* SuccessUpdateView.swift */,
-				A77281D92B07EA4500856D19 /* GenreChecker.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -311,6 +310,7 @@
 				A76EDFE62AF571D900A4C6C9 /* NewUser */,
 				A76EDFFE2AF573F700A4C6C9 /* StorageService.swift */,
 				A7B5BCCA2AFA96D200990F30 /* PlistParser.swift */,
+				A77281D92B07EA4500856D19 /* GenreChecker.swift */,
 			);
 			path = "Firebase Services";
 			sourceTree = "<group>";

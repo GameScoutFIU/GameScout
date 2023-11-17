@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SavedGames: Identifiable, Codable {
-    let id: Int
-    let gameID: [Int]
+    let id: String
+    let gameID: Int
+    let image_id: Int
+    let title: String
 }

@@ -23,7 +23,7 @@ class TopGameViewModel: ObservableObject {
                         
                         self.TopGameInfo = snapshot.documents.map { doc in
                             print("SUCCESS")
-                            return GameCatalog(id: doc.documentID, gameID: doc["gameID"] as? Int ?? -1, image_id: doc["image_id"] as? String ?? "", title: doc["title"] as? String ?? "")
+                            return GameCatalog(id: doc.documentID, cover: doc["cover"] as? Int ?? -1, gameID: doc["gameID"] as? Int ?? -1, image_id: doc["image_id"] as? String ?? "", title: doc["title"] as? String ?? "")
                         }
                     }
                 }

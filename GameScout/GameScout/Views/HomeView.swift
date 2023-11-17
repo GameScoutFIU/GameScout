@@ -16,7 +16,7 @@ struct HomeView: View {
             NavigationStack {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 16) {
-                        NavigationLink(destination: GameInfoView(id: 215769, name: "Cyberpunk 2077: Phantom Liberty")) {
+                        NavigationLink(destination: GameInfoView(id: 215769, name: "Cyberpunk 2077: Phantom Liberty", cover: 333294)) {
                             TopGameView()
                         }
                         VStack (alignment: .leading){
@@ -25,7 +25,7 @@ struct HomeView: View {
                                 HStack {
                                     ForEach(trgvm.TrendingGameInfo) {
                                         game in
-                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title)){
+                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title, cover: game.cover)){
                                             
                                             GameTabPreview(Title: game.title, image_id: game.image_id)
                                         }
@@ -39,7 +39,7 @@ struct HomeView: View {
                                 HStack {
                                     ForEach(rgvm.RecommendedGameInfo) {
                                         game in
-                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title)){
+                                        NavigationLink(destination: GameInfoView(id: game.gameID, name: game.title, cover: game.cover)){
                                             
                                             GameTabPreview(Title: game.title, image_id: game.image_id)
                                         }

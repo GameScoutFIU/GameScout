@@ -77,7 +77,7 @@ struct SearchView: View {
                             .frame(width: 1)
                     }
                         List(sp.SearchPreviewInfo) {
-                            game in NavigationLink(destination: GameInfoView(id: game.id, name: game.name)) {
+                            game in NavigationLink(destination: GameInfoView(id: game.id, name: game.name, cover: game.cover ?? -1)) {
                                 ListRow(eachGame: game)
                             }.listRowBackground(Color("theme"))
                                 .listRowSeparatorTint(.white)
