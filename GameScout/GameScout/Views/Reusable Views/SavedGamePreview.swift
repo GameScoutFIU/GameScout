@@ -2,7 +2,7 @@
 //  SavedGamePreview.swift
 //  GameScout
 //
-//  Created by Erick Rivera on 11/5/23.
+//  Created by Elvis Blanco on 11/5/23.
 //
 
 import SwiftUI
