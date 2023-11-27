@@ -2,7 +2,7 @@
 //  SavedGamesViewModel.swift
 //  GameScout
 //
-//  Created by Erick Rivera on 11/7/23.
+//  Created by Elvis Blanco on 11/7/23.
 //
 
 import Foundation
