@@ -2,7 +2,7 @@
 //  GameInfoView.swift
 //  GameScout
 //
-//  Created by Erick Rivera on 11/5/23.
+//  Created by Brandon George on 11/5/23.
 //
 
 import SwiftUI

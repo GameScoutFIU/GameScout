@@ -2,7 +2,7 @@
 //  PasswordResetView.swift
 //  GameScout
 //
-//  Created by Erick Rivera on 11/7/23.
+//  Created by Rubens Inaba on 11/7/23.
 //
 
 import SwiftUI
